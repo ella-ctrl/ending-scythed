@@ -1,0 +1,101 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="$cNrDcNom!_sqk-(v}Zd">Player</variable><variable type="KIND_SpriteKind" id="#!B[`yONvn9!fB{~1]iq">Projectile</variable><variable type="KIND_SpriteKind" id="ZkRe}7P4F3;]:sW|l25~">Food</variable><variable type="KIND_SpriteKind" id="pAE*mV^^e*5rAQWuPWMt">Enemy</variable><variable type="KIND_SpriteKind" id="m.lG0AC.i;FWHh+)Z8mZ">Scythe</variable><variable id="e-tA**).{AM@;-@}J(nK">Ghost</variable><variable id="tsq2s;!j[uwm,dajSDw8">otherSprite</variable><variable id="8x|qJZuU?o)[^+~;?3if">gravity</variable><variable id=".#XgX*Sue$2B]6R%F`(~">pixelIsToMetres</variable><variable id="*_|pcvtiW,Hm||)^^S7{">mySprite</variable><variable id="|y.k6?82=E?g,j8.)w/8">canDoubleJump</variable><variable id="Q2KEXV2]|(fLP=u8Ox|%">myEnemy</variable><variable id="{zTye7|5}x`3Du9/j!CK">Grim's Scythe</variable><variable id="E=FB8|7vf@@f~[W${E3_">value</variable><variable id="4[|x!I${*g;r?P7TqH+y">list</variable><variable id="{XP0T:J.HbV//Q/HKxpU">candy</variable></variables><block type="spriteoverlapswith" id="zP)iRp5z|;hv(KMbgpRF" disabled="true" x="0" y="0"><value name="sprite"><block type="variables_get" id="H{wR@N,RD]rBx8BZSi-_" disabled="true"><field name="VAR" id="e-tA**).{AM@;-@}J(nK">Ghost</field></block></value><value name="other"><block type="variables_get" id="~TdP3:QEiL6kRqwAEVo+" disabled="true"><field name="VAR" id="tsq2s;!j[uwm,dajSDw8">otherSprite</field></block></value></block><block type="pxt-on-start" id="qInM_B/D,W*jF6oEU[{~" x="-90" y="90"><statement name="HANDLER"><block type="game_dialog_set_text_color" id=")n|CGQ*m#O+FO$cI;?zS"><value name="color"><shadow type="colorindexpicker" id="sTPP)6N@9I5bt#QT[pl$"><field name="index">15</field></shadow></value><next><block type="game_dialog_set_cursor" id="A`o|dVUYe$CEs+KjZL68"><value name="frame"><shadow type="screen_image_picker" id="0[Yy.=zxL(`eFx!,x`Vu"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . f f f f f . . . . . 
+. . . f f f f f f f f f . . . . 
+. . f f f f f f f f f f f . . . 
+. . f f f 1 1 1 1 1 f f f . . . 
+. . f f 1 1 1 1 1 1 1 f f . . . 
+. . f f 1 1 f 1 f 1 1 f f . . . 
+. . f f 1 1 f 1 f 1 1 f f . . . 
+. . f f 1 1 1 1 1 1 1 f f . . . 
+. . f f f 1 1 1 1 1 f f f . . . 
+. . . f f 1 f 1 f 1 f f . . . . 
+. f f f f f f f f f f f f f . . 
+f f f f f f f f f f f f f f f f 
+f f f f f f f f f f f f f f f f 
+f f f f f f f f f f f f f f f f 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"0[Yy.=zxL(`eFx!,x`Vu"}}</data></shadow></value><next><block type="game_dialog_set_frame" id=",x7ceD3A-o5`Kgh.ZA42"><value name="frame"><shadow type="dialog_image_picker" id="ENYhOr-j8E~VV1$;,4,$"><field name="img">img`
+a a a a a a a a a a a a a a a 
+a f f f f f f f f f f f f f a 
+a f f f f f f f f f f f f f a 
+a f f 4 4 4 4 4 4 4 4 4 f f a 
+a f f 4 d d d d d d d 4 f f a 
+a f f 4 d d d d d d d 4 f f a 
+a f f 4 d d d d d d d 4 f f a 
+a f f 4 d d d d d d d 4 f f a 
+a f f 4 d d d d d d d 4 f f a 
+a f f 4 d d d d d d d 4 f f a 
+a f f 4 d d d d d d d 4 f f a 
+a f f 4 4 4 4 4 4 4 4 4 f f a 
+a f f f f f f f f f f f f f a 
+a f f f f f f f f f f f f f a 
+a a a a a a a a a a a a a a a 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"ENYhOr-j8E~VV1$;,4,$"}}</data></shadow></value><next><block type="gameSplash" id="eCp??k!T3Xr!{w--VnZ1"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="1" _input_init="true"></mutation><value name="title"><shadow type="text" id="*@XlRN_**/oL9P,G7sNp"><field name="TEXT">Find the Grim Reaper and </field></shadow></value><value name="subtitle"><shadow type="text" id="g+MKe^{f20yD2({3zOZ~"><field name="TEXT">return his scythe!</field></shadow></value><next><block type="game_show_long_text" id="ge9X)26IK1-b/4A`4Oj2"><field name="layout">DialogLayout.Bottom</field><value name="str"><shadow type="text" id="y_|04`ru?4!K6!EjVYWJ"><field name="TEXT">By pressing the space bar multiple times, you are able to fly!</field></shadow></value><next><block type="game_show_long_text" id="P9WA95dITl!?@JgUx^av"><field name="layout">DialogLayout.Bottom</field><value name="str"><shadow type="text" id=":R^}y$}Ry+k8#,c=Wjh["><field name="TEXT">Using this skill, fly through the sky and find the Grim Reaper </field></shadow></value><next><block type="game_show_long_text" id="T~L3aEiP3}O!ZLc+K#3E"><field name="layout">DialogLayout.Bottom</field><value name="str"><shadow type="text" id="1mqF,/3E1tPxwZZ7B3Dw"><field name="TEXT">He will be waiting for you on one of the platforms!</field></shadow></value><next><block type="game_show_long_text" id="nd?S}hzsMmHAKwk:QYWI"><field name="layout">DialogLayout.Bottom</field><value name="str"><shadow type="text" id=",,hs!h*|{Q[9E.Y)lkM^"><field name="TEXT">But beware! There are decoy platforms that are empty!</field></shadow></value><next><block type="game_show_long_text" id="3`HT2y.l^uJ)JLTnYpzp"><field name="layout">DialogLayout.Bottom</field><value name="str"><shadow type="text" id="p2w{#9;=NO*a0q$o`*!E"><field name="TEXT">When you find him, walk up to him and talk to him!</field></shadow></value><next><block type="variables_set" id="KUj0No+Z6Ir6a:k(jhDQ"><field name="VAR" id="e-tA**).{AM@;-@}J(nK">Ghost</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="*OY,0wUe(O}%y2c?1h;,"><value name="img"><shadow type="screen_image_picker" id="tYL3I}CrmBqUV}5#aMa+"><field name="img">img`
+. . . . . . . . . . f . . . . . 
+. . . . . f f f f f 3 f . . . . 
+. . . . f f 1 1 f 3 d 3 f . . . 
+. . . f 1 1 1 1 1 f 3 f . . . . 
+. . . f 1 1 1 1 1 1 f f . . . . 
+. . f 1 1 f 1 1 1 1 1 1 f . . . 
+. . f 1 1 f f 1 f f 1 1 f . . . 
+. . f 1 3 f f 1 f f 3 1 f . . . 
+. . f 1 1 1 1 1 1 1 1 1 f . . . 
+. . f 1 f 1 1 1 1 f f 1 f . . . 
+. . f 1 1 f f f f 1 1 1 f . . . 
+. . f 1 1 1 f 1 f 1 1 1 f . . . 
+. . f 1 f 1 1 1 1 1 f 1 f . . . 
+. . f f . f 1 1 f f . f f . . . 
+. . f . . . f f . . . . f . . . 
+. . . . . . . . . . . . . . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"tYL3I}CrmBqUV}5#aMa+"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="g^,DrIx;D^!XC_8L9~lX"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="game_control_sprite" id="%@V-HQoxQXEL~GXdzcxF"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="2" _input_init="true"></mutation><value name="sprite"><block type="variables_get" id="61gaS4NYy@9F+2{87JLb"><field name="VAR" id="e-tA**).{AM@;-@}J(nK">Ghost</field></block></value><value name="vx"><shadow type="spriteSpeedPicker" id="]h|Df1Z+.8J0A,-1|^VT"><field name="speed">100</field></shadow></value><value name="vy"><shadow type="spriteSpeedPicker" id="{1bF.WlxwO7vSdLi_=M~"><field name="speed">0</field></shadow></value><next><block type="spritesetpos" id="F0`#Qt^j]RtifghMlUN:"><value name="sprite"><block type="variables_get" id="5|2Yd!-U9LGcQjA?pfy!"><field name="VAR" id="e-tA**).{AM@;-@}J(nK">Ghost</field></block></value><value name="x"><shadow type="positionPicker" id="0qFZ0oU]JLyeL?j5AXPB"><field name="index">30</field></shadow></value><value name="y"><shadow type="positionPicker" id=",DYo9!_,`YnCo,U{X@VJ"><field name="index">201</field></shadow></value><next><block type="variables_set" id="]RNLo_mt2gHbIW%Mg[+h"><field name="VAR" id="8x|qJZuU?o)[^+~;?3if">gravity</field><value name="VALUE"><shadow type="math_number" disabled="true"><field name="NUM">0</field></shadow><block type="math_arithmetic" id="{:z-fT;!l={W)hq-=_=C"><field name="OP">MULTIPLY</field><value name="A"><shadow type="math_number" id="w{!c.cnTQxlc`)zG`V(T"><field name="NUM">9.81</field></shadow></value><value name="B"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="49#!h1Jq73S6KVY;AWjU"><field name="VAR" id=".#XgX*Sue$2B]6R%F`(~">pixelIsToMetres</field></block></value></block></value><next><block type="Sprite_blockCombine_set" id="P~)#TwzUjSMev#.Z6H3U"><field name="property">Sprite.ay@set</field><value name="mySprite"><block type="variables_get" id="KykAf)uv5d+Y2`WHY?S{"><field name="VAR" id="e-tA**).{AM@;-@}J(nK">Ghost</field></block></value><value name="value"><shadow type="math_number" id="!{!31m;/,jQhGk!zky{{"><field name="NUM">350</field></shadow></value><next><block type="set_current_tilemap" id="@x[22zSg(NOIFc,-#/U;"><value name="tilemap"><shadow type="tiles_tilemap_editor"><field name="tilemap">tilemap`level1`</field><data>{"commentRefs":[],"fieldData":{"tilemap":"level1"}}</data></shadow><block type="tiles_tilemap_editor" id="J*x)hC+YOu@;y-uRpOZZ"><field name="tilemap">tilemap`level1`</field><data>{"commentRefs":[],"fieldData":{"tilemap":"level1"}}</data></block></value><next><block type="camerafollow" id="n_lF5Cx*EQqY~O4gzfT+"><value name="sprite"><block type="variables_get" id="zAx]!rrS]T[0rA74wTTB"><field name="VAR" id="e-tA**).{AM@;-@}J(nK">Ghost</field></block></value><next><block type="variables_set" id="%NR!JL+aIA42zKQ`rcm9"><field name="VAR" id="{zTye7|5}x`3Du9/j!CK">Grim's Scythe</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="yS|E~ygZw]*kUJwUQ)tS"><value name="img"><shadow type="screen_image_picker" id="qb^]S)sf{vTuEA@C+Vkt"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . f f f f . . . . . . 
+. . . . . f b b 1 1 f . . . . . 
+. . f f f b 1 1 1 1 1 f . . . . 
+. f e e f 1 1 1 1 f f . . . . . 
+. . . f e e f . . . . . . . . . 
+. . . . f e e f . . . . . . . . 
+. . . . . f e e f . . . . . . . 
+. . . . . f e e e f . . . . . . 
+. . . . . . f f e e f f f . . . 
+. . . . . . . . f e e e e f . . 
+. . . . . . . . . f e e e e . . 
+. . . . . . . . . . e e e f . . 
+. . . . . . . . . . . . . . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"qb^]S)sf{vTuEA@C+Vkt"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id=".]RP[kVB)e896Uxo2Hxs"><field name="MEMBER">Enemy</field></shadow></value></block></value><next><block type="spriteFollowOtherSprite" id="icLE-t23QYxf0PLonx9:"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><value name="sprite"><block type="variables_get" id="_{q8yHk:,Elu0QuRDtcG"><field name="VAR" id="{zTye7|5}x`3Du9/j!CK">Grim's Scythe</field></block></value><value name="target"><block type="variables_get" id="5SUQ}P]N($E6zhsH5Q7`"><field name="VAR" id="e-tA**).{AM@;-@}J(nK">Ghost</field></block></value><value name="speed"><shadow type="math_number" id="niN]]^5Up9SWJll,-4qM"><field name="NUM">100</field></shadow></value><next><block type="spritesetpos" id=")hL]qX3V2CoO%Z#Pk+kT"><value name="sprite"><block type="variables_get" id="}xSmaNql(5R`g/?Kqfuu"><field name="VAR" id="{zTye7|5}x`3Du9/j!CK">Grim's Scythe</field></block></value><value name="x"><shadow type="positionPicker" id="QopNI|eGhD(LRK,-shaG"><field name="index">13</field></shadow></value><value name="y"><shadow type="positionPicker" id="W16NB*k941x!W*nALo`C"><field name="index">201</field></shadow></value><next><block type="synth_set_volume" id="qgR~m;9/$1DI~ihBg*`g"><value name="volume"><shadow type="math_number_minmax" id="E{GCO,wM4/[pFzJSJ/54"><mutation min="0" max="255" label="Volume" precision="0"></mutation><field name="SLIDER">60</field></shadow></value><next><block type="music_playable_play" id="@Gmm?Oh[:M@hWW$qoJpf"><field name="playbackMode">music.PlaybackMode.LoopingInBackground</field><value name="toPlay"><shadow type="music_song_field_editor" id="Yc.TN!p!(DU|-bmm*+nU"><field name="song">hex`0078000408030203001c0001dc00690000045e0100040000000000000000000005640001040003720000000400011d04000800011d08000c0001200c001000012010001400011d14001800011d18001c0001221c002000012220002400011d24002800011d28002c0001202c003000012030003400011d34003800011d38003c0001273c004000012448004c00012250005400012058005c00011d06001c00010a006400f401640000040000000000000000000000000000000002720000000400011b04000800011b08000c00011e0c001000011e10001400011b14001800011b18001c0001201c002000012020002400011b24002800011b28002c00011e2c003000011e30003400011b34003800011b38003c0001253c004000012248004c00012050005400011e58005c00011b`</field><data>{"commentRefs":[],"fieldData":{"song":"Yc.TN!p!(DU|-bmm*+nU"}}</data></shadow></value></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></statement></block><block type="keyonevent" id="NUXqXTFrH.KJQuTEF#K." x="1020" y="160"><field name="button">controller.A</field><field name="event">ControllerButtonEvent.Pressed</field><statement name="HANDLER"><block type="Sprite_blockCombine_set" id=".@f6T5lnlDpVwmcs0i_)"><field name="property">Sprite.vy@set</field><value name="mySprite"><block type="variables_get" id="qg3NA|;_3h~:vZN!HzA."><field name="VAR" id="e-tA**).{AM@;-@}J(nK">Ghost</field></block></value><value name="value"><shadow type="math_number" id="Jy=8W1_)7R*H^@y_THde"><field name="NUM">-150</field></shadow></value></block></statement></block><block type="spriteshittile" id="#U#~w5,bi@+q4g%Ze7YW" x="880" y="400"><value name="HANDLER_DRAG_PARAM_sprite"><shadow type="argument_reporter_custom" id="8O)~FDbk[L9X^#=sRD?G"><mutation typename="Sprite"></mutation><field name="VALUE">sprite</field></shadow></value><value name="kind"><shadow type="spritekind" id="Nh=.@D9tG~xiRr:qhHz."><field name="MEMBER">Player</field></shadow></value><value name="tile"><shadow type="tileset_tile_picker" id="}QMA?.(E22YP8O@P?@,A"><field name="tile">assets.tile`myTile28`</field></shadow></value><value name="HANDLER_DRAG_PARAM_location"><shadow type="argument_reporter_custom" id="{U$182=ZV_c,46Vx[K=3"><mutation typename="tiles.Location"></mutation><field name="VALUE">location</field></shadow></value><statement name="HANDLER"><block type="game_dialog_set_text_color" id="0(,G}fT^q_0902lQT9+O"><value name="color"><shadow type="colorindexpicker" id="?i,%7J94gS,aeYK=VBGO"><field name="index">15</field></shadow></value><next><block type="game_dialog_set_cursor" id="gLB*/-^SJ1x7m$L2).]i"><value name="frame"><shadow type="screen_image_picker" id="GTC|]VI*alWnaM87o]|b"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . f f f f f . . . . . 
+. . . f f f f f f f f f . . . . 
+. . f f f f f f f f f f f . . . 
+. . f f f 1 1 1 1 1 f f f . . . 
+. . f f 1 1 1 1 1 1 1 f f . . . 
+. . f f 1 1 f 1 f 1 1 f f . . . 
+. . f f 1 1 f 1 f 1 1 f f . . . 
+. . f f 1 1 1 1 1 1 1 f f . . . 
+. . f f f 1 1 1 1 1 f f f . . . 
+. . . f f 1 f 1 f 1 f f . . . . 
+. f f f f f f f f f f f f f . . 
+f f f f f f f f f f f f f f f f 
+f f f f f f f f f f f f f f f f 
+f f f f f f f f f f f f f f f f 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"GTC|]VI*alWnaM87o]|b"}}</data></shadow></value><next><block type="game_dialog_set_frame" id="id`z%sESt:7eVPkD{SYP"><value name="frame"><shadow type="dialog_image_picker" id="@yDoei18fV)?2Ky^o(H$"><field name="img">img`
+a a a a a a a a a a a a a a a 
+a f f f f f f f f f f f f f a 
+a f f f f f f f f f f f f f a 
+a f f 4 4 4 4 4 4 4 4 4 f f a 
+a f f 4 d d d d d d d 4 f f a 
+a f f 4 d d d d d d d 4 f f a 
+a f f 4 d d d d d d d 4 f f a 
+a f f 4 d d d d d d d 4 f f a 
+a f f 4 d d d d d d d 4 f f a 
+a f f 4 d d d d d d d 4 f f a 
+a f f 4 d d d d d d d 4 f f a 
+a f f 4 4 4 4 4 4 4 4 4 f f a 
+a f f f f f f f f f f f f f a 
+a f f f f f f f f f f f f f a 
+a a a a a a a a a a a a a a a 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"@yDoei18fV)?2Ky^o(H$"}}</data></shadow></value><next><block type="game_show_long_text" id="dj~05]*3[MGF_Ean[_4w"><field name="layout">DialogLayout.Bottom</field><value name="str"><shadow type="text" id="##D]OXQpygHTLw|@S_.`"><field name="TEXT">Is that my scythe!</field></shadow></value><next><block type="game_show_long_text" id="AG7JfH9|![?+pJ.MT1j%"><field name="layout">DialogLayout.Bottom</field><value name="str"><shadow type="text" id="GvhJL_=Mm:`T.;J?]8co"><field name="TEXT">Awh yeah kid! That's great!</field></shadow></value><next><block type="game_show_long_text" id="alnd?lHuB3IdhO}W(4wE"><field name="layout">DialogLayout.Bottom</field><value name="str"><shadow type="text" id="ckxh}X6]Pu)l1x]RLmae"><field name="TEXT">Thank you so much! You don't know how much this means to me!</field></shadow></value><next><block type="game_show_long_text" id="YmvX6w-wu4p{7.5Dcq!z"><field name="layout">DialogLayout.Bottom</field><value name="str"><shadow type="text" id="$y(XS9`PW+dIaDd:FN@r"><field name="TEXT">I'll see you around kid.</field></shadow></value><next><block type="game_setgameovereffect" id="(*d21|~`SGH_iGu(~e5@"><field name="effect">effects.splatter</field><value name="win"><shadow type="toggleWinLose" id="D40sYc@cz=AVz^XY6~!2"><field name="win">true</field></shadow></value><next><block type="gameOver2" id="ccqN?ImGZcjMQLf2vLu1"><value name="win"><shadow type="toggleWinLose" id=".j!4nZDFUvCXOe5vZ/No"><field name="win">true</field></shadow></value><next><block type="game_setgameovermessage" id="Gtd+,p,*IV^bshE0e%?i"><value name="message"><shadow type="text" id="w9Ha^75P=a(a_#H=AsU%"><field name="TEXT">GAME OVER!</field></shadow></value><value name="win"><shadow type="toggleWinLose" id="xSHB/;GJ^Z:vXfF0!:=q"><field name="win">true</field></shadow></value></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></statement></block></xml>
